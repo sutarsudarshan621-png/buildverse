@@ -1,0 +1,90 @@
+/* Page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+.light-bg {
+  background-color: #eff6ff;
+}
+
+.dark-bg {
+  background-color: #111827;
+}
+
+/* Container */
+.container {
+  text-align: center;
+}
+
+/* Button */
+.toggle-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.light-btn {
+  background: #facc15;
+  box-shadow: 0 10px 30px rgba(234, 179, 8, 0.5);
+}
+
+.dark-btn {
+  background: #312e81;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+}
+
+/* Button press animation */
+.btn-press {
+  transform: scale(0.95);
+}
+
+/* Icons */
+.icon-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.sun-icon {
+  color: white;
+}
+
+.moon-icon {
+  color: #fde68a;
+}
+
+.icon-hidden {
+  opacity: 0;
+  transform: rotate(180deg) scale(0);
+}
+
+/* Text */
+.label {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: color 0.5s ease;
+}
+
+.light-text {
+  color: #374151;
+}
+
+.dark-text {
+  color: #d1d5db;
+}
